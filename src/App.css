@@ -1,0 +1,53 @@
+.mainFraim {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.app {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+button {
+  width: 20dvh;
+  height: 20dvh;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 30px;
+
+}
+
+.font {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+
+.record {
+  background-color: green;
+}
+
+.stop {
+  animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: brown;
+  }
+}
